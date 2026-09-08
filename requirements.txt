@@ -1,7 +1,10 @@
-openpyxl
 streamlit
 pandas
-psycopg2-binary
 plotly
+psycopg2-binary
 extra-streamlit-components
+langchain
+langchain-core
+langchain-google-genai
 requests
+openpyxl
