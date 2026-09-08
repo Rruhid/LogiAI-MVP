@@ -1,0 +1,420 @@
+/* --- ОСНОВНОЙ ФОН И ТИПОГРАФИКА --- */
+.stApp {
+    background: radial-gradient(circle at top right, #2e1065, #0f172a);
+    color: #ffffff !important;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, span, label {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff !important;
+}
+
+/* --- ГЛАВНЫЙ ЭКРАН И ЗАГОЛОВКИ --- */
+.hero-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #ffffff !important;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    color: #cbd5e1 !important;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+/* --- КАРТОЧКИ И БЛОКИ --- */
+.feature-card {
+    background: rgba(30, 41, 59, 0.8) !important;
+    border: 1px solid rgba(16, 185, 129, 0.4) !important;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-sizing: border-box !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    border-color: #10b981 !important;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.15);
+}
+
+.feature-card h3 {
+    color: #10b981 !important;
+    margin-bottom: 20px;
+}
+
+.feature-card p {
+    color: #cbd5e1 !important;
+    font-size: 14px;
+}
+
+.cta-box {
+    background: rgba(76, 29, 149, 0.4) !important;
+    padding: 35px;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 40px;
+    border: 1px solid #10b981;
+}
+
+.cta-box h3, .cta-box p {
+    color: #ffffff !important;
+}
+
+/* --- КАРТОЧКИ ТАРИФОВ --- */
+.pricing-card {
+    background: rgba(30, 41, 59, 0.8) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+    border-top: 4px solid #3b82f6 !important;
+    padding: 25px;
+    border-radius: 16px;
+    box-sizing: border-box !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Защита текста внутри карточек от рассыпания при зуме */
+.pricing-card h3, 
+.pricing-card p, 
+.pricing-card div,
+.pricing-card span {
+    color: #ffffff !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+}
+
+.pricing-card hr {
+    border: none !important;
+    height: 1px !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    margin: 15px 0 !important;
+}
+
+
+
+
+.price-num {
+    color: #10b981 !important;
+}
+
+.pricing-card span {
+    color: #cbd5e1 !important;
+}
+
+
+
+
+/* --- САЙДБАР (БЕЗ СКРОЛЛА) --- */
+section[data-testid="stSidebar"] {
+    background-color: #0f172a !important;
+    border-right: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Компактные отступы внутри сайдбара, чтобы убрать скролл */
+section[data-testid="stSidebar"] [data-testid="stVerticalBlock"] {
+    gap: 0.4rem !important;
+}
+
+section[data-testid="stSidebar"] .stElementContainer {
+    margin-bottom: 20px !important;
+}
+
+/* --- КНОПКИ --- */
+div.stButton > button, 
+div.stFormSubmitButton > button {
+    background-color: #10b981 !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+}
+
+div.stButton > button:hover, 
+div.stFormSubmitButton > button:hover,
+div.stButton > button:focus, 
+div.stFormSubmitButton > button:focus,
+div.stButton > button:active, 
+div.stFormSubmitButton > button:active {
+    background-color: #059669 !important;
+    color: #ffffff !important;
+    border-color: #059669 !important;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.4) !important;
+}
+
+/* --- ЗАГРУЗЧИК ФАЙЛОВ В САЙДБАРЕ (КРАСНЫЙ СТИЛЬ) --- */
+section[data-testid="stSidebar"] div[data-testid="stFileUploader"] button {
+    background-color: #ef4444 !important;
+    color: #000000 !important;
+    border: none !important;
+    font-weight: 600 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stFileUploader"] button:hover {
+    background-color: #dc2626 !important;
+    color: #000000 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stFileUploader"] section {
+    background-color: #7f1d1d !important;
+    border: 1px solid #ef4444 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stFileUploader"] [data-testid="stMarkdownContainer"] p {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stFileUploader"] small {
+    color: #fca5a5 !important;
+}
+
+/* --- ВЕРХНЯЯ ПАНЕЛЬ И ОБЛАСТЬ ПРОМПТА --- */
+header[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+div[data-testid="stBottom"], 
+div[data-testid="stBottom"] > div, 
+div[data-testid="stBottomBlockContainer"], 
+[data-testid="stBottom"] [class*="st-emotion-cache"],
+footer {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* --- ПОЛЕ ВВОДА (ЧАТ) --- */
+div[data-testid="stChatInput"] {
+    background-color: #ffffff !important;
+    border: 2px solid #10b981 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2) !important;
+    padding: 2px 6px !important;
+}
+
+div[data-testid="stChatInput"] > div {
+    background-color: transparent !important;
+}
+
+div[data-testid="stChatInput"] textarea {
+    background-color: transparent !important;
+    color: #eaedf5 !important;
+    font-size: 15px !important;
+    line-height: 1.2 !important;
+    padding-top: 4px !important;
+}
+
+div[data-testid="stChatInput"] textarea::placeholder {
+    color: #64748b !important;
+}
+
+div[data-testid="stChatInput"] div[data-testid="stChatInputContainer"],
+div[data-testid="stChatInput"] > div {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+ 
+
+@keyframes scrollMarquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+
+
+/* --- СТИЛИЗАЦИЯ КАРТОЧКИ ПОЛЬЗОВАТЕЛЯ В САЙДБАРЕ --- */
+.user-profile-card {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.user-profile-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.user-info-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-icon {
+    font-size: 16px;
+    background: rgba(16, 185, 129, 0.1);
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.user-label {
+    font-size: 10px;
+    color: #f59e0b !important;
+    text-transform: uppercase;
+}
+
+.user-value {
+    font-size: 12px;
+    color: #f1f5f9;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Красивый бейдж для партнера */
+.partner-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    width: fit-content;
+    box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
+}
+
+/* --- АНИМАЦИЯ БЕГУЩЕЙ СТРОКИ --- */
+@keyframes scrollMarquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* --- АНИМАЦИЯ КАЧАНИЯ ТЕКСТА ВЛЕВО-ВПРАВО --- */
+.swing-text {
+    display: inline-block;
+    animation: swingMotion 4s ease-in-out infinite;
+}
+
+@keyframes swingMotion {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px); /* Насколько далеко текст сдвигается вправо */
+    }
+}
+
+/* --- АНИМАЦИЯ И СТИЛИ ДЛЯ КАРТОЧЕК ТАРИФОВ --- */
+.pricing-card {
+    background: rgba(30, 41, 59, 0.8) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+    border-top: 4px solid #3b82f6 !important;
+    padding: 20px !important;
+    border-radius: 16px !important;
+    height: 100% !important;
+    box-sizing: border-box !important; /* Обязательно, чтобы padding не разрывал блоки */
+    word-wrap: break-word !important;   /* Перенос длинных слов */
+    overflow: hidden !important;        /* Скрывает всё, что вылезает за границы */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+.pricing-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #10b981 !important;
+    box-shadow: 0 12px 24px rgba(16, 185, 129, 0.2) !important;
+}
+
+ 
+/* --- СТАТИЧНЫЙ ЗЕЛЕНЫЙ ФОН КНОПКИ ЧАТА --- */
+div[data-testid="stChatInput"] button {
+    background-color: #10b981 !important;
+    background-image: none !important;
+    border: 1px solid #10b981 !important;
+}
+
+div[data-testid="stChatInput"] button:not(:hover):not(:active):not(:focus) {
+    background-color: #10b981 !important;
+    background-image: none !important;
+}
+
+div[data-testid="stChatInput"] button:hover,
+div[data-testid="stChatInput"] button:focus,
+div[data-testid="stChatInput"] button:active {
+    background-color: #10b981 !important;
+    border-color: #10b981 !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+div[data-testid="stChatInput"] button svg {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+}
+
+
+/* --- СТИЛИЗАЦИЯ УВЕДОМЛЕНИЯ st.success --- */
+div.stAlertContainer.st-emotion-cache-1i05z9, 
+div[data-baseweb="notification"] {
+    background-color: #064e3b !important; /* Насыщенный темно-зеленый фон */
+    border: 1px solid #10b981 !important;   /* Аккуратная изумрудная граница */
+    color: #ffffff !important;             /* Белый текст */
+    border-radius: 12px !important;
+}
+
+/* Цвет иконки и текста внутри уведомления */
+div.stAlertContainer p, 
+div.stAlertContainer svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+
+/* --- ИСПРАВЛЕНИЕ ЧИТАЕМОСТИ ИНЛАЙН-КОДА В ЧАТЕ --- */
+div[data-testid="stChatMessage"] code {
+    background-color: rgba(51, 65, 85, 0.9) !important; /* Приятный темно-серый фон */
+    color: #34d399 !important;                          /* Яркий мятно-зеленый цвет текста */
+    padding: 2px 6px !important;
+    border-radius: 6px !important;
+    font-size: 13px !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+}
+
+ 
+
+
