@@ -19,9 +19,13 @@ st.set_page_config(page_title="AI Data Agent (Pro)", layout="wide")
 
 st.markdown("""
 <style>
-    /* Исправление цвета текста на зеленых/цветных плашках (если это теги или инлайновы код) */
-    code, span[data-baseweb="tag"] {
-        color: #000000 !important;
+    /* Универсальный и читаемый стиль для инлайн-кода (тегов в тексте) */
+    code {
+        background-color: rgba(150, 150, 150, 0.2) !important;
+        color: #ff4b4b !important; /* фирменный красный цвет Streamlit или поставьте #2e8540 для зеленого */
+        padding: 2px 6px !important;
+        border-radius: 4px !important;
+        font-weight: 600 !important;
     }
 </style>
 """, unsafe_allow_html=True)

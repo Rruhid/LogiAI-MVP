@@ -121,7 +121,7 @@ load_css("pages/style.css")
 if "logged_in" not in st.session_state: 
     st.session_state.logged_in = False 
  
-st.markdown("<h2 style='text-align: center;'>🔐 LogiAI System Login (PostgreSQL)</h2>", unsafe_allow_html=True) 
+st.markdown("<h2 style='text-align: center;'>🔐 LogiAI System Login</h2>", unsafe_allow_html=True) 
  
 auth_mode = st.radio("Select mode:", ["Login", "Register"], horizontal=True) 
  
