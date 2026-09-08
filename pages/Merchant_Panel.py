@@ -17,6 +17,18 @@ cookie_manager = stx.CookieManager()
 # 1. Настройка страницы
 st.set_page_config(page_title="AI Data Agent (Pro)", layout="wide")
 
+st.markdown("""
+<style>
+    /* Исправление цвета текста на зеленых/цветных плашках (если это теги или инлайновы код) */
+    code, span[data-baseweb="tag"] {
+        color: #000000 !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+
+
+
 def get_db_connection():
   # Берем строку подключения из секретов
   db_url = st.secrets["postgres"]["connection_string"]
