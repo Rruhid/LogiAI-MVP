@@ -1,0 +1,7 @@
+openpyxl
+streamlit
+pandas
+psycopg2-binary
+plotly
+extra-streamlit-components
+requests
