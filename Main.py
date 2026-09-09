@@ -36,7 +36,7 @@ load_css("pages/style.css")
 
 
 st.set_page_config(
-    page_title="LogiAI - Süni İntellekt Logistika Platforması",
+    page_title="LogiAI - AI Business Intelligence",
     page_icon="🚀",
     layout="wide"
 )

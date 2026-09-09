@@ -17,6 +17,8 @@ cookie_manager = stx.CookieManager()
 # 1. Настройка страницы
 st.set_page_config(page_title="AI Data Agent (Pro)", layout="wide")
 
+
+
 st.markdown("""
 <style>
     /* Универсальный и читаемый стиль для инлайн-кода (тегов в тексте) */
